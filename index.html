@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Load TensorFlow.js. This is required to use coco-ssd model.
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    Load the coco-ssd model. 
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script> -->
+
+    <script defer src="./bundle.js"></script>
+    <!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+    <div class="container">
+        <img id="img" src="./beach.jpg" />
+    </div>
+    <style>
+        img{
+            position: absolute;
+        }
+        canvas {
+            z-index: 99;
+            position: absolute;
+        }
+    </style>
+
+    <!-- Place your code in the script tag below. You can also use an external .js file -->
+    <!-- <script> -->
+    <!-- // // Notice there is no 'import' statement. 'cocoSsd' and 'tf' is
+        // // available on the index-page because of the script tag above.
+
+        // const img = document.getElementById('img');
+
+        // async function detectObjects(img){
+        //     let cocoInstance = await cocoSsd.load()
+        //     console.log(new  Map (0,await cocoInstance.detect(img))) 
+        // }
+
+        // detectObjects(img)
+        // // // Load the model.
+        // // cocoSsd.load().then(model => {
+        // //     let objArray = new Map()
+        // //     // detect objects in the image.
+        // //     model.detect(img).then(predictions => {
+        // //         objArray.set(predictions)
+        // //         // console.log('Predictions: ', predictions);
+        // //     });
+        // //     console.log(objArray)
+        // // }); -->
+    <!-- </script> -->
+</body>
+
+</html>

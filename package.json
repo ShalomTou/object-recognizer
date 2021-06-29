@@ -1,0 +1,26 @@
+{
+  "name": "object-recognizer",
+  "version": "1.0.0",
+  "description": "\"# object-recognizer\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"browserify main.js > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShalomTou/object-recognizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShalomTou/object-recognizer/issues"
+  },
+  "homepage": "https://github.com/ShalomTou/object-recognizer#readme",
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.2",
+    "@tensorflow/tfjs-backend-cpu": "^3.7.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.7.0",
+    "browserify": "^17.0.0"
+  }
+}
